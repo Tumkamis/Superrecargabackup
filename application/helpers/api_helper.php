@@ -51,7 +51,7 @@ function post_recargamas($data){
     $CI->db->insert('recargamas',$data);
 }
 
-function post_4424812489($data){
+function post_n4424812489($data){
     $CI =& get_instance();
-    $CI->db->insert('4424812489',$data);
+    $CI->db->insert('n4424812489',$data);
 }
