@@ -57,8 +57,8 @@ function post_n4424812489($data){
 
 }
 
-function post_n4421015216($data){
+function post_n5216($data){
     $CI =& get_instance();
-    $CI->db->insert('n4421015216',$data);
+    $CI->db->insert('n5216',$data);
 
 }
