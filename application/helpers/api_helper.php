@@ -50,15 +50,3 @@ function post_recargamas($data){
     $CI =& get_instance();
     $CI->db->insert('recargamas',$data);
 }
-
-function login(){
-    $estatus=1;
-    $CI =& get_instance();
-    $CI->db->select('idtipoinst, nombre, estatus');
-    $CI->db->from('tipoinstitucion');
-    $CI->db->where('estatus', $estatus);
-    $consulta = $CI->db->get();
-    $resultado = $consulta->result();
-    
-    return $resultado;
-}
