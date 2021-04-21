@@ -11,6 +11,10 @@
  *
  * @author marioeduardo
  */
+
+/*
+ * Prueba de commit con dos colaboradores
+ */
 header("Content-Type:application/json"); 
 class webservice_ejemplo  extends CI_Controller{
     
