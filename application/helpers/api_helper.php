@@ -68,3 +68,21 @@ function post_nprueba5217($data){
     $CI->db->insert('nprueba5217',$data);
 
 }
+
+function post_n5104($data){
+    $CI =& get_instance();
+    $CI->db->insert('n5104',$data);
+
+}
+
+function post_n5214($data){
+    $CI =& get_instance();
+    $CI->db->insert('n5104',$data);
+
+}
+
+function post_n5217($data){
+    $CI =& get_instance();
+    $CI->db->insert('n5217',$data);
+
+}
