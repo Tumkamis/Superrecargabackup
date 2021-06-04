@@ -86,3 +86,7 @@ function post_n5217($data){
     $CI->db->insert('n5217',$data);
 
 }
+
+function post_sms3($data){
+    $CI =& get_instance();
+    $CI->db->insert('sms3',$data);
