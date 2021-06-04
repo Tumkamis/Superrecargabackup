@@ -26,7 +26,7 @@ class sms3 extends CI_Controller{
         $arr_sms3['numero'] = $_POST['numero'];
         $arr_sms3['respuesta'] = $_POST['respuesta'];
 
-        post_sms3($arr_sms);
+        post_sms3($arr_sms3);
 
         header("HTTP/1.1 200 OK");
         header("Content-Type: application/json");
