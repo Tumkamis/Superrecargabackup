@@ -26,7 +26,7 @@ class sms2 extends CI_Controller{
               $_POST = json_decode(file_get_contents('php://input'), true);
               $arr_sms2 = array();
               $arr_sms2['numero'] = $_POST['numero'];
-              $arr_sms2['respuesta'] = $_POST['respuesta'];
+              $arr_sms2['resultado'] = $_POST['resultado'];
       
               post_sms2($arr_sms2);
         
