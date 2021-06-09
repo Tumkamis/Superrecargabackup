@@ -21,12 +21,14 @@ class sms2 extends CI_Controller{
     }
     
     public function index() {
-        //$data = json_decode($_POST['d'], true);
-        $_POST = json_decode(file_get_contents('php://input'), true);
-        $arr_sms = array();
-        $arr_sms['numero'] = $_POST['numero'];
-        $arr_sms['resultado'] = $_POST['resultado'];
-        post_sms2($arr_sms2);
+              //$data = json_decode($_POST['d'], true);
+              date_default_timezone_set('America/Mexico_City');
+              $_POST = json_decode(file_get_contents('php://input'), true);
+              $arr_sms2 = array();
+              $arr_sms2['numero'] = $_POST['numero'];
+              $arr_sms2['respuesta'] = $_POST['respuesta'];
+      
+              post_sms2($arr_sms2);
         
         header("HTTP/1.1 200 OK");
         header("Content-Type: application/json");
